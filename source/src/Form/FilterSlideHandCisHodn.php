@@ -2,8 +2,8 @@
 
 namespace App\Form;
 
-use App\Entity\Polozka;
-use App\Repository\PolozkaRepository;
+use App\Entity\Stitek;
+use App\Repository\StitekRepository;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;

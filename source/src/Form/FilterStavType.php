@@ -2,9 +2,8 @@
 
 namespace App\Form;
 
-use App\Entity\Polozka;
 use App\Entity\Stav;
-use App\Repository\PolozkaRepository;
+use App\Repository\StavRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

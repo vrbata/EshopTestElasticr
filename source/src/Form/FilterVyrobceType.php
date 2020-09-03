@@ -2,8 +2,8 @@
 
 namespace App\Form;
 
-use App\Entity\Polozka;
-use App\Repository\PolozkaRepository;
+use App\Entity\Vyrobce;
+use App\Repository\VyrobceaRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

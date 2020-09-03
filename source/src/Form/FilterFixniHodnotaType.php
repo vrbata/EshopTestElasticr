@@ -2,7 +2,6 @@
 
 namespace App\Form;
 
-use App\Entity\Polozka;
 use App\Entity\Stitek;
 use App\Repository\StitekRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
