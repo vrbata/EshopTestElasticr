@@ -1,0 +1,10 @@
+jak by se řešilo mapování z/do databáze pro možnost administrování štítkování produktů + nástřel schématu
+	- Nevím přesně co si pod tím mám představit. Nejprve bych vytvořil produkty a následně štítek a pomocí checkboxu bych vybral všechny produkty co chci oštítkovat.
+	
+jak by se řešila filtrace na front-endu (na kolik SQL dotazů, jak by byly složité)
+	- Netuším jak v symfony tohle provést na frontendu. Tudíž nemám představu a nevím kolik sql dotazů by bylo, ale určitě by byli hodněě složité.
+
+jaké byly největší problémy při hledání řešení a proč bylo zvoleno právě nějaké řešení, případně jaké byly alternativy
+	-Z celého projektu jsme nevěděl jenom dynamický posuvník. Ale pomocí dokumentace bylo nalezeno řešení.
+co se nepodařilo vyřešit a proč
+	-Nejsem si ničeho vědom, ale jsem si uvědomělý, že asi jednotlivá řešení nejsou zrovna profesionálně vyřešeny. Jako juniora bez zkušeností mě nic jiného nenapadlo.
