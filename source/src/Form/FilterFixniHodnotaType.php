@@ -3,24 +3,25 @@
 namespace App\Form;
 
 use App\Entity\Polozka;
-use App\Repository\PolozkaRepository;
+use App\Entity\Stitek;
+use App\Repository\StitekRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class ZarukaType extends AbstractType
+class FilterFixniHodnotaType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Zaruka', EntityType::class, array (
-                'class' => Polozka::class,
-                'query_builder' =>  function (PolozkaRepository $pr)
+            ->add('Nazev', EntityType::class, array (
+                'class' => Stitek::class,
+                'query_builder' =>  function (StitekRepository $pr)
                 {
-                    return $pr->findByZaruka($options['Kategorie']);
+                    return $pr->findFixHodnota($options['NazevStitku'], $options['Kategorie']); //nazev stitku, např. zaruka, vrátí produkty v určité kategorii, 
                 },
-                'placeholder' => 'Vyber typ záruky',
+                'placeholder' => 'Vyber typ' . $options['NazevStitku'],
                 'mapped' => false,
                 'expanded' => false,
                 'multiple' => false,    
@@ -31,8 +32,14 @@ class ZarukaType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Polozka::class,
+            'data_class' => Stitek::class,
             'Kategorie',
+            'NazevStitku',
         ]);
     }
 }
+
+/*
+ pokud je to myšleno
+
+*/
