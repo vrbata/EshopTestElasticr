@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Polozka;
+use App\Entity\Stav;
 use App\Repository\PolozkaRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -25,7 +26,7 @@ class FilterStavType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Polozka::class,            
+            'data_class' => Stav::class,            
         ]);
     }
 }
