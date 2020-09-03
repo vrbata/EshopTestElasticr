@@ -30,11 +30,6 @@ class Polozka
     private $Cena;
 
     /**
-     * @ORM\Column(type="boolean")
-     */
-    private $skladem;
-
-    /**
      * @ORM\OneToMany(targetEntity=Kategorie::class, mappedBy="polozka")
      */
     private $Kategorie;
@@ -96,19 +91,7 @@ class Polozka
 
         return $this;
     }
-
-    public function getSkladem(): ?bool
-    {
-        return $this->skladem;
-    }
-
-    public function setSkladem(bool $skladem): self
-    {
-        $this->skladem = $skladem;
-
-        return $this;
-    }
-
+    
     /**
      * @return Collection|Kategorie[]
      */
