@@ -18,6 +18,10 @@ class FilterStavType
 class FilterVyrobceType
 		-nejlepší by tady byl opět dropdownlist, ale protože to už tady xkrát bylo, tak jsem tu dal checkbox
 		
+		
+
+max hodinku, možná hodinku a půl
+		
 	
 
 
