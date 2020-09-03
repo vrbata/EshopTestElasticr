@@ -15,13 +15,8 @@ class FilterVyrobceType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('Vyrobce', EntityType::class, array(
-            'required'  => false,
-            'class'    => Vyrobce::class,
-            'property' => 'id',
-            'multiple' => true,
-            'expanded' => true
-        ));        
+        $builder
+        -> add ('Vyrobce');            
     }
 
     public function configureOptions(OptionsResolver $resolver)
