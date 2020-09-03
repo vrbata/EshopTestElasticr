@@ -13,8 +13,8 @@ class FilterSlideHandCisHodn extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Slide_Hand', RangeType::class, array (
-                'data' => function (PolozkaRepository $pr) 
+            ->add('SlideHand', RangeType::class, array (
+                'data' => function (StitekRepository $pr) 
                 {
                     return $pr->findByCiselnaHodnota($options['NazevStitku'] ,$options['Kategorie']); //Vrátí hodnoty štítků v určité kategorii, tedy např. velikost ciferníku v kategorii hodinky
                 }
