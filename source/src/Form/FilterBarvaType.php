@@ -16,7 +16,7 @@ class FilterBarvaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-        -> add ('Barva', EntityType::class, EntityType::class,
+        -> add ('Barva', EntityType::class,
         array(
             'class' => Barva::class,
             'choice_label' => function (Barva $a) {
