@@ -18,7 +18,7 @@ class FilterBarvaType extends AbstractType
         $builder
         -> add ('Barva', EntityType::class, EntityType::class,
         array(
-            'class' => Article::class,
+            'class' => Barva::class,
             'choice_label' => function (Barva $a) {
                 return $a->getNazev();
             },
